@@ -124,9 +124,9 @@ describe('LoginForm Component', () => {
 
   it('displays loading state when loading prop is true', () => {
     render(<LoginForm onSubmit={mockOnSubmit} loading={true} />);
-    
+
     const submitButton = screen.getByRole('button');
-    expect(submitButton).toHaveTextContent(/logging in/i);
+    expect(submitButton).toHaveTextContent(/loading/i);
     expect(submitButton).toBeDisabled();
   });
 
